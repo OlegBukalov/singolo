@@ -1,0 +1,170 @@
+@import "fonts.css";
+
+body {
+    font-family: 'Lato-Regular', sans-serif;
+    max-width: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 939px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    background-color: #2d303a;
+    padding: 29px 0 20px;
+    margin: 0;
+    border-bottom: 6px solid #323746;
+}
+
+.holder {
+    color: white;
+    display: flex;
+}
+
+.logo {
+    font-size: 25px;
+    margin: 0;
+    font-family: 'Lato-Bold';
+    width: 30%;
+    letter-spacing: -0.82px;
+}
+
+.logo span {
+    color: #d0625d;
+}
+
+.menu {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Lato-Bold';
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 -2px;
+    padding: 0;
+}
+
+nav  {
+    width: 70%;
+    margin: 13px 0;
+}
+
+nav ul li {
+    display: inline;
+    letter-spacing: -0.3px;
+}
+
+nav ul li:hover {
+    color: #d9655f;
+    cursor: pointer;
+}
+
+li:not(:last-child)::after {
+    content: '\B7';
+    margin: 0 14.2px;
+    color: #323746;
+}
+
+/* Slider */
+
+.mainСontent {
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+}
+
+.pointer {
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.iphoneImg1 {
+    padding-left: 2px;
+}
+
+.iphoneImg2 {
+    padding-left: 18px;
+    padding-top: 121px;
+}
+
+.phones {
+    display: flex;
+    justify-content: space-between;
+    padding: 52px 0 55px;
+}
+
+/* Our Services */
+
+.aboutUs {
+    padding: 60px 0 27px;
+    background-color: #f2f2f2;
+    border-bottom: 6px solid white;
+    color: #666d89;
+}
+
+.aboutUs h3 {
+    margin: 0;
+    font-family: 'Lato-Black';
+    font-size: 30px;    
+}
+
+.aboutService {
+    font-family: 'Lato-Light';
+    font-size: 18px;
+    letter-spacing: -0.22px;
+    line-height: 31px;
+    text-align: justify;
+}
+
+.services {
+    display: flex;
+    margin-top: 45px;
+}
+
+.column {
+    max-width: 32%;
+}
+.column:nth-child(2) {
+    margin-right: 18px;
+    margin-left: 20px;
+}
+
+.icon {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.icon img {
+    display: flex;
+    width: 59px;
+    height: 59px;
+}
+.iconText {
+    margin-left: 19px;
+}
+.serviceTitle {
+    font-size: 18px;
+    margin: -4px 0 0 0;
+    letter-spacing: 0.29px;
+}
+.serviceParagraph {
+    font-size: 12px;
+    line-height: 21.6px;
+    margin-top: 9px;
+    text-align: justify;
+}
+.last {
+    margin-left: 22px;
+}
