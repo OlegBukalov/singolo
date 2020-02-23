@@ -1,0 +1,18 @@
+<svg id="Phone" xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #666d89;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #666d89;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <path id="phone-2" data-name="phone" class="cls-1" d="M79,1052H63a3,3,0,0,0-3,3v26a3,3,0,0,0,3,3H79a3,3,0,0,0,3-3v-26A3,3,0,0,0,79,1052Zm1,29a1,1,0,0,1-1,1H63a1,1,0,0,1-1-1v-2H80v2Zm0-3H62v-20H80v20Zm0-21H62v-2a1,1,0,0,1,1-1H79a1,1,0,0,1,1,1v2Zm-7-1.5a0.5,0.5,0,0,1-.5.5h-3a0.5,0.5,0,0,1-.5-0.5h0a0.5,0.5,0,0,1,.5-0.5h3a0.5,0.5,0,0,1,.5.5h0Zm-1,25a0.5,0.5,0,0,1-.5.5h-1a0.5,0.5,0,0,1-.5-0.5h0a0.5,0.5,0,0,1,.5-0.5h1a0.5,0.5,0,0,1,.5.5h0Z" transform="translate(-40 -1037)"/>
+  <circle id="Ellipse" class="cls-2" cx="30.5" cy="30.5" r="29.5"/>
+</svg>
