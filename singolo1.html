@@ -4,113 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fonts.css" rel="webfonts">
+    <link href="singolo1.css" rel="stylesheet">
     <title>Singolo</title>
-    <link rel="stylesheet" href="singolo1.css" type='text/css'>
-    <link rel="webfonts" href="fonts.css" type='text/css'>
 </head>
 
 <body>
     <div class="wrapper">
-        <header>
+        <header id="home">
             <div class="container">
                 <div class="holder">
                     <h1 class="logo">SINGOLO<span>*</span></h1>
                     <nav>
                         <ul class="menu">
-                            <li>Home</li>
-                            <li>Services</li>
-                            <li>Portfolio</li>
-                            <li>About</li>
-                            <li>Contact</li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
         <main>
-            <section class="mainСontent">
+            <section class="main">
                 <div class="container">
-                    <div class="phones">
-                        <div class="pointer"><img src="assets/img/chevL.png" alt="Left pointer"></div>
-                        <div class="iphoneImg1"><img src="assets/img/iPhone Vertical.png" alt="Iphone image"></div>
-                        <div class="iphoneImg2"><img src="assets/img/iPhone Horizontal.png" alt="Iphone image"></div>
-                        <div class="pointer"><img src="assets/img/chevR.png" alt="Right pointer"></div>
+                    <div class="phone">
+                        <div class="slider start"><img src="assets/img/chev.png" alt="slider-start"></div>
+                        <div class="vertical"><img src="assets/img/iPhone Vertical.png" alt="vertical"></div>
+                        <div class="horizontal"><img src="assets/img/iPhone Horizontal.png" alt="horizontal"></div>
+                        <div class="slider end"><img src="assets/img/chev2.png" alt="slader-end"></div>
                     </div>
                 </div>
             </section>
-            <section class="aboutUs">
+            <section class="services" id="services">
                 <div class="container">
-                
-                    <div>
+                    <div class="services-text">
                         <h3>Our Services</h3>
-                        <p class="aboutService">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
+                        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
                             non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
                             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                     </div>
-                    
-                    <div class="services">
-                        <div class="column">
+                    <div class="services-items">
+                        <div class="services-column">
+                            <!-- первый -->
                             <div class="icon">
                                 <img src="assets/img/Pen.svg" alt="pen">
-                                <div class="iconText">
-                                    <h4 class="serviceTitle">Custom Design</h4>
-                                    <p class="serviceParagraph">
-                                        Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra 
-                                        lacus ut, ultrices velit.
+                                <div class="icon-text">
+                                    <h4 class="process-title">Custom Design</h4>
+                                    <p class="process-paragraph">
+                                        Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet,
+                                        viverra lacus ut, ultrices velit.
                                     </p>
                                 </div>
                             </div>
+                            <!-- четвертый -->
                             <div class="icon">
                                 <img src="assets/img/Phone.svg" alt="phone">
-                                <div class="iconText">
-                                    <h4 class="serviceTitle">Responsive Layout</h4>
-                                    <p class="serviceParagraph">
+                                <div class="icon-text">
+                                    <h4 class="process-title">Responsive Layout</h4>
+                                    <p class="process-paragraph">
                                         Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula.
-                                        Prae-sent elit leo.
+                                        Prae- &shy;sent elit leo.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="column">
+                        <div class="services-column">
+                            <!-- второй -->
                             <div class="icon">
                                 <img src="assets/img/Bulb.svg" alt="bulb">
-                                <div class="iconText">
-                                    <h4 class="serviceTitle">Inovative Ideas</h4>
-                                    <p class="serviceParagraph">
-                                        Quisque luctus, quam eget molestie com-modo, lacus purus cursus purus, nec
+                                <div class="icon-text">
+                                    <h4 class="process-title">Inovative Ideas</h4>
+                                    <p class="process-paragraph">
+                                        Quisque luctus, quam eget molestie com- &shy;modo, lacus purus cursus purus, nec
                                         rutrum tellus dolor id lorem.
                                     </p>
                                 </div>
                             </div>
+                            <!-- пятый -->
                             <div class="icon">
                                 <img src="assets/img/Bubble.svg" alt="bubble">
-                                <div class="iconText">
-                                    <h4 class="serviceTitle">24 /7 Support</h4>
-                                    <p class="serviceParagraph">
-                                        Vivamus vel quam lacinia, tincidunt dui
-                                        non, vehicula nisi.Nulla a sem erat. Pellen-
-                                        tesque egestas venenatis lorem.
+                                <div class="icon-text">
+                                    <h4 class="process-title">24 /7 Support</h4>
+                                    <p class="process-paragraph">
+                                        Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.Nulla a sem erat.
+                                        Pellen-
+                                        &shy;tesque egestas venenatis lorem.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="column">
+                        <div class="services-column">
+                            <!-- третий -->
                             <div class="icon">
                                 <img src="assets/img/Heart.svg" alt="heart">
-                                <div class="iconText last">
-                                    <h4 class="serviceTitle">Love Is The Answer</h4>
-                                    <p class="serviceParagraph">
+                                <div class="icon-text last">
+                                    <h4 class="process-title">Love Is The Answer</h4>
+                                    <p class="process-paragraph">
                                         Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat
-                                        felis.
-                                        Quisque condimentum.
+                                        felis. Quisque condimentum.
                                     </p>
                                 </div>
                             </div>
+                            <!-- шестой -->
                             <div class="icon ">
                                 <img src="assets/img/Star.svg" alt="star">
-                                <div class="iconText last">
-                                    <h4 class="serviceTitle">Feel Like A Star</h4>
-                                    <p class="serviceParagraph">
+                                <div class="icon-text last">
+                                    <h4 class="process-title">Feel Like A Star</h4>
+                                    <p class="process-paragraph">
                                         Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae
                                         aliquam tellus.
                                     </p>
@@ -122,6 +125,6 @@
             </section>
         </main>
     </div>
-    
 </body>
+
 </html>
