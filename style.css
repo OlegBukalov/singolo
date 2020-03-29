@@ -15,7 +15,7 @@ body {
     box-sizing: border-box;
 }
 .container {
-    max-width: 939px;
+    max-width: 92%;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
@@ -23,13 +23,13 @@ body {
 
 /* Header */
 header {
-    width: 1020px;
     background-color: #2d303a;
     padding: 29px 0 20px;
     margin: 0;
     border-bottom: 6px solid #323746;
     position: sticky;
     top: 0;
+    left: 0;
     z-index: 5;
 }
 .holder {
@@ -42,6 +42,7 @@ header {
     font-family: 'Lato-Bold';
     width: 30%;
     letter-spacing: -0.82px;
+    z-index: 5;
 }
 .logo span {
     color: #da716b;
@@ -68,10 +69,6 @@ li a {
     display: inline;
     letter-spacing: -0.3px;
 }
-.menu li a:hover {
-    color: #da716b;
-    cursor: pointer;
-}
 .nav-active {
     color: #da716b;
 }
@@ -80,54 +77,56 @@ li:not(:last-child)::after {
     margin: 0 14.2px;
     color: #494e62;
 }
-
+.burger-button {
+    display: none;
+}
 
 /* Main block */
 .main {
-    padding: 52px 0 55px;
+    padding-top: 52px;
+    padding-bottom: 55px;
     background-color: #f06c64;
     border-bottom: 6px solid #d96c6f;
     transition: all ease 0.5s;
 }
-
 .slider:hover {
     cursor: pointer;
 }
 .vertical {
     position: absolute;
-    left: 71px;
+    left: 13%;
     z-index: 1;
+    width: 44%;
 }
 .horizontal {
     position: absolute;
     top: 120px;
     z-index: 1;
+    width: 88%;
 }
 .phone {
     position: relative;
-    height: 106%;
+    height: 100%;
     overflow: hidden;
 }
 .slide {
-    height: 100%;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
 .red-phone {
     width: 939px;
-    left: 50%;
+    left: 54.4%;
     transform: translate(-50%, -50%);
     position: relative;
 }
 .iphone {
     position: absolute;
     top: 0;
-    width: 548px;
-    height: 464px;
+    width: 58.4%;
 }
-
 .iphone-horizontal {
     right: 6px;
 }
@@ -137,17 +136,18 @@ li:not(:last-child)::after {
     position: relative;
     
 }
-/* .amination-phone {
-    animation: next-to-screen 1s;
-} */
 .slider-next-phone {
     text-align: center;
+    left: 22%;
+    right: 22%;
+}
+.slider-next {
+    width: 84%;
 }
 .bgBlue {
     background-color: #648BF0;
     border-bottom: 6px solid #649BF0;
 }
-
 .phone-none {
   opacity: 0;
 }
@@ -157,11 +157,15 @@ li:not(:last-child)::after {
 }
 .avatar-right {
     top: 132px;
-    right: 152px;
+    right: 28%;
+    width: 62%;
+    cursor: pointer;
 }
 .avatar-left {
     top: 62px;
-    left: 82px;
+    left: 15%;
+    width: 35.4%;
+    cursor: pointer;
 }
 .slider-nav {
     position: absolute;
@@ -175,7 +179,6 @@ li:not(:last-child)::after {
 .unvisible {
     visibility: hidden;
 }
-
 .start {
     background: url(./assets/img/chev.png) no-repeat;
     left: 42px;
@@ -190,35 +193,14 @@ li:not(:last-child)::after {
     height: 27px;
     width: 20px;
     position: absolute;
-    top: 228px;
+    top: 47%;
     border: none;
     outline: none;
 }
 
-@keyframes next-to-screen {
-    from {
-        transform: translate(110%);
-        visibility: visible;
-    }
-    to {
-        transform: none;
-        visibility: visible;
-    }
-}
-@keyframes previous-to-screen {
-    from {
-        transform: translate(-110%);
-        visibility: visible;
-    }
-    to {
-        transform: none;
-        visibility: visible;
-    }
-}
-
 /* Services */
 .services {
-    padding: 60px 0 26px;
+    padding: 60px 0 28px;
     background-color: #f2f2f2;
     border-bottom: 6px solid white;
 }
@@ -240,18 +222,19 @@ li:not(:last-child)::after {
 .services-items {
     display: flex;
     margin-top: 46px;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .icon {
     display: flex;
     margin-bottom: 23px;
+    width: 32%;
+    justify-content: space-between;
+    margin-right: 18px;
 }
-.services-column {
-    max-width: 32%;
+.last {
+    margin-right: 0;
 }
-
 .icon img {
-    display: flex;
     width: 59px;
     height: 59px;
 }
@@ -273,9 +256,6 @@ li:not(:last-child)::after {
     letter-spacing: -0.1px;
     overflow: hidden;
     max-height: 63px;
-}
-.last {
-    margin-left: 22px;
 }
 
 /* Portfolio */
@@ -354,7 +334,7 @@ li:not(:last-child)::after {
 
 /* About Us */
 #about {
-    padding: 59px 0 65px; 
+    padding: 60px 0 67px; 
     background-color: #f2f2f2;
     border-bottom: 6px solid white;
 }
@@ -381,11 +361,14 @@ li:not(:last-child)::after {
 #our-team {
     justify-content: space-between;
     width: 33%;
-    margin-right: 19px;
+    margin-right: 2%;
     overflow: hidden;
 }
 #our-team:last-child {
     margin-right: 0;
+}
+#our-team img {
+    width: 100%;
 }
 .person-name {
     font-family: 'Lato-Black', sans-serif;
@@ -430,9 +413,10 @@ li:not(:last-child)::after {
     height: 16px;
     fill: #656d89;
 }
+
 /* contact */
 .contact {
-    padding: 60px 0 15px 0;
+    padding: 60px 0 14px 0;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
 }
@@ -517,21 +501,21 @@ li:not(:last-child)::after {
     font-size: 12px;
     letter-spacing: -0.14px;
     color: #f0d8d9;
-    margin-top: 9px;
-    line-height: 21px;
+    margin-top: 11px;
+    line-height: 22px;
     text-align: justify;
     margin-bottom: 26px;
 }
-
 .form-button {
-    width: 25%;
-    height: 30px;
+    width: 30%;
+    height: 40px;
     font-size: 15px;
     margin-top: 5px;
     border: none;
     border-radius: 5px;
     color: #f48c8f;
     background-color: #d6564f;
+    border: 1px solid darkmagenta;
 }
 .form-button:hover {
     cursor: pointer;
@@ -568,7 +552,7 @@ li:not(:last-child)::after {
 
 /* footer */
 footer {
-    padding: 22px 0 22px 0;
+    padding: 21px 0 21px 0;
     background-color: #2d303a;
 }
 
@@ -588,7 +572,6 @@ footer {
     margin-top: 0;
     
 }
-
 .social-footer-link {
     display: block;
     text-decoration: none;
@@ -602,7 +585,6 @@ footer {
 .social-footer-link:last-child {
     margin-right: 0;
 }
-
 .social-footer-link:hover {
     background-color: #767E9E;
 }
@@ -611,41 +593,34 @@ footer {
     fill: #fff;
 }
 
-#services,
-#portfolio,
-#about,
-#contact {
-    border-top: 90px solid transparent;
-	margin-top: -90px;
-	/* -moz-background-clip: padding;
-	-webkit-background-clip: padding-box; */
-	background-clip: padding-box;
+.main,
+.services,
+.portfolio,
+.about,
+.contact {
+    scroll-margin-top: 88px;
 }
-
-
 
 
 .modal {
     display: none;
     position: fixed;
+    align-items: center;
     z-index: 5;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
     background-color: rgba(0, 0, 0, 0.6);
 }
-
 .modal-text {
     background-color: white;
     margin: 20% auto;
     padding: 20px;
-    border: 1px solid grey;
+    border: 1px solid black;
     border-radius: 5px;
-    width: 25%;
+    width: 45%;
 }
-
 .modal-text p {
     font-size: 16px;
     max-width: 100%;
@@ -654,13 +629,541 @@ footer {
 .close-modal {
     color: black;
     font-size: 15px;
-    background-color: cornflowerblue;
-    border: 1px solid black;
+    background-color: #f06c64;
+    border: 2px solid orange;
     border-radius: 7px;
     padding: 10px 20px;
     cursor: pointer;
+    margin-top: 10px;
+}
+.modal-scroll {
+    overflow: auto;
+    max-height: 250px;
 }
 .letter {
     font-family: 'Lato-Bold', sans-serif;
 }
+body.lock {
+    overflow: hidden;
+}
 
+
+/* Mobile */
+@media (min-width: 1020px) {
+    .menu li a:hover {
+        color: #da716b;
+        cursor: pointer;
+    }
+}
+/*max 1019 */
+@media (max-width: 1019px) {
+    .main {
+        padding: 10px 0 0;
+    }
+    .container-phone {
+        height: 435px
+    }
+    .container {
+        width: 90%;
+    }
+    .end {
+        right: -14px;
+    }
+    .start {
+        left: -8px;
+    }
+    .port-paragraph{
+        line-height: 29px;
+        letter-spacing: 0;
+        margin-top: 18px;
+    }
+    .navigation {
+        margin-bottom: 27px;
+    }
+    .vertical {
+        width: 33%;
+        left: 25%;
+        top: 30px;
+    }
+    .avatar-left {
+        top: 78px;
+        width: 26.3%;
+        left: 26.8%;
+    }
+    .horizontal {
+        width: 67%;
+    }
+    .avatar-right {
+        width: 48.3%;
+        top: 129px;
+        right: 44%;
+    }
+    .services {
+        padding: 40px 0 16px;
+    }
+    .services-items {
+        margin-top: 39px;
+    }
+    .icon {
+        width: 46%;
+        margin-right: 0;
+        margin-bottom: 42px;
+    }
+    .services-items {
+        justify-content: space-between;
+    }
+    .potr-pic img {
+        width: 31.3%;
+        height: 30%;
+    }
+    .contact {
+        padding: 54px 0 37px 0;
+    }
+    #about {
+        padding: 52px 0 69px;
+    }
+    .team {
+        margin-top: 35px;
+    }
+    .person-name {
+        margin-top: 7px;
+    }
+    .about-person {
+        margin-top: 1px;
+    }
+    .social-icons {
+        margin-top: 13px;
+    }
+    .get-info {
+        padding-top: 25px;
+    }
+    .contact-info {
+        margin-left: 21px;
+    }
+    .common-form {
+        padding-bottom: 12px;
+    }
+    .contact-info p {
+        margin-top: 2px;
+        line-height: 22px;
+        margin-bottom: 14px;
+    }
+    #form-area {
+        height: 160px;
+        margin-bottom: 6px;
+    }
+    footer {
+        padding: 23px 0;
+    }
+}
+
+
+/* max 900 */
+@media (max-width: 920px) {
+    .slider-next-phone {
+        top: 7%;
+    }
+}
+
+/* max 830  */
+@media (max-width: 830px) {
+    .iphone-horizontal {
+        right: 25px;
+    }
+}
+
+/* max 767  */
+@media (max-width: 767px) {
+    .slider-next {
+        width: 76%;
+    }
+    .slider {
+        top: 40%;
+    }
+    .vertical {
+        width: 30%;
+        top: 0;
+    }
+    .avatar-left {
+        top: 44px;
+        width: 24%;
+        left: 26.5%;
+    }
+    .horizontal {
+        width: 60%;
+        top: 80px;
+    }
+    .avatar-right {
+        width: 42%;
+        top: 88px;
+        right: 51%;
+    }
+    .iphone-horizontal {
+        right: 0px;
+    }
+    .iphone-vertical {
+        left: 4%;
+    }
+    .services-items {
+        display: block;
+        width: 100%;
+    }
+    .icon {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .services-items {
+        margin-top: 25px;
+    }
+    .container {
+        max-width: 83%;
+    }
+    .container-phone {
+        height: 350px;
+        max-width: 100%;
+    }
+    .services {
+        padding: 33px 0 0px;
+    }
+    .portfolio {
+        padding: 40px 0 25px;
+    }
+    .potr-pic img {
+        width: 48%;
+    }
+    .portfolio-picture {
+        margin-bottom: 15px;
+    }
+    .portfolio-picture:nth-child(n+9) {
+        display: none;
+    }
+    #about {
+        padding: 30px 0 10px;
+    }
+    .team {
+        margin-top: 25px;
+        display: block;
+    }
+    #our-team {
+        width: 100%;
+        padding-bottom: 33px;
+    }
+    .social-icons {
+        margin-top: 15px;
+    }
+    .contact {
+        padding: 40px 0 16px 0;
+    }
+    .get-info {
+        padding: 25px 0 0 0;
+        display: block;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .form-button {
+        width: 100%;
+        margin-top: 0;
+    }
+    #form-area {
+        height: 160px;
+    }
+    .common-form {
+        padding-bottom: 13px;
+    }
+    .contact-info {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+    .copyright {
+        display: none;
+    }
+    .social-footer {
+        justify-content: center;
+    }
+    .foo {
+        display: block;
+    }
+
+    header {
+        padding: 18px 0 15px;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 20px;
+        margin-left: 12px;
+    }
+
+    .burger-button {
+        display: block;
+        position: absolute;
+        left: 20px;
+        z-index: 6;
+        width: 25px;
+        height: 20px;
+        background-color: transparent;
+        background-image: url(./assets/img/header-burger.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all ease 0.5s;
+        border: none;
+        padding: 0;
+        outline: none;
+        margin-top: 2px;
+    }
+    
+    nav {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 70%;
+        height: 100%;
+        background-color: #2D303A;
+        display: block;
+        margin: 0;
+        transition: all 0.5s ease;
+    }
+    .menu {
+        display: block;
+        margin-top: 233px;
+        margin-left: 26%;
+    }
+    .menu li {
+        display: block;
+        margin-top: 30px;
+        font-size: 23px;
+    }
+    li:not(:last-child)::after {
+        content: '';
+    }
+
+    .burger-button.burger-active {
+        transform: rotate(90deg);
+        z-index: 6;        
+    }
+    nav.burger-active {
+        left: 0;
+    }
+    body.lock {
+        overflow: hidden;
+    }
+    .logo-burger {
+        margin-left: 40px;
+        justify-content: start;
+    }
+    .shadow::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #2D303A;
+        opacity: 0.6;
+        z-index: -1;
+    }
+    
+}
+
+@media (max-width:  680px) {
+    .slider-next {
+        width: 85%;
+    }
+    .iphone-horizontal {
+        right: 10px;
+    }
+}
+
+@media (max-width:  620px) {
+    .slider-next {
+        width: 90%;
+    }
+    .iphone-vertical {
+        left: 10%;
+    }
+    .vertical {
+        width: 23%;
+        top: 24px;
+    }
+    .avatar-left {
+        top: 57px;
+        width: 18.5%;
+        left: 26%;
+    }
+    .iphone-horizontal {
+        right: -1%;
+        top: 12px;
+    }
+    .horizontal {
+        width: 48%;
+        top: 80px;
+    }
+    .avatar-right {
+        width: 33.4%;
+        top: 86px;
+        right: 61%;
+    }
+}
+
+@media (max-width:  510px) {
+    .slider {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .slider-next-phone {
+        top: 10%;
+    }
+    .iphone-vertical {
+        left: 13%;
+    }
+    .vertical {
+        width: 20%;
+        top: 41px;
+    }
+    .avatar-left {
+        top: 70px;
+        width: 16%;
+    }
+    .iphone-horizontal {
+        right: -1%;
+        top: 12px;
+    }
+    .horizontal {
+        width: 43%;
+        top: 80px;
+    }
+    .avatar-right {
+        width: 30%;
+        top: 86px;
+        right: 65%;
+    }
+    .main {
+        padding: 0 0 0;
+    }
+    .container-phone {
+        height: 310px;
+    }
+    .red-phone {
+        top: -15px;
+    }
+}
+
+@media (max-width:  440px) {
+    
+    .container-phone {
+        height: 230px;
+    }
+    .avatar-left {
+        top: 62px;
+        width: 12.1%;
+        left: 25.7%;
+    }
+    .iphone-vertical {
+        left: 17%;
+    }
+    .vertical {
+        width: 15%;
+    }
+    .iphone-horizontal {
+        right: -24px;
+        top: 0;
+    }
+    .horizontal {
+        width: 33%;
+        top: 77px;
+    }
+    .avatar-right {
+        width: 23%;
+        top: 81px;
+        right: 73%;
+    }
+    .slider-next {
+        width: 86%;
+    }
+}
+
+@media (max-width:  376px) {
+    header {
+        padding: 23px 0 18px;
+    }
+    .red-phone {
+        top: -21px;
+    }
+    .slider-next-phone {
+    top: 15%;
+    }
+    .iphone-vertical {
+        left: 18.3%;
+    }
+    .vertical {
+        width: 16%;
+    }
+    .avatar-left {
+        top: 64px;
+        width: 13%;
+        left: 25.7%;
+    }
+    .iphone-horizontal {
+        right: -3.5%;
+        top: 8px;
+    }
+    .horizontal {
+        width: 32%;
+        top: 77px;
+    }
+    .avatar-right {
+        width: 22.5%;
+        top: 81px;
+        right: 74.1%;
+    }
+    .container-phone {
+        height: 215px;
+    }
+    .services {
+        padding: 26px 0 0;
+    }
+    .services-items {
+        margin-top: 32px;
+    }
+    .icon {
+        margin-bottom: 18px;
+    }
+    .icon:last-child {
+        margin-bottom: 7px;
+    }
+    .portfolio {
+        padding: 43px 0 20px;
+    }
+    .port-paragraph {
+        margin-bottom: 19px;
+    }
+    #about {
+        padding: 33px 0 3px;
+    }
+    .person-name {
+        margin-top: 16px;
+    }
+    .contact {
+        padding: 44px 0 7px;
+    }
+    .get-info {
+        padding-top: 20px;
+    }
+    .form-button {
+        height: 53px;
+        font-size: 20px;
+    }
+    .contacts {
+        margin-bottom: 12px;
+    }
+}
+@media (max-width: 355px) {
+    .iphone-vertical {
+        left: 20%;
+    }
+}
